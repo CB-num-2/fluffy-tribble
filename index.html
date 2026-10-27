@@ -4,89 +4,28 @@
     <meta charset="UTF-8">
     <title>Quinceañera</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
-        body { background: #111; color: #4a3321; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
-        .deck { width: 90vw; max-width: 900px; height: 80vh; background: #f7e1d7; border-radius: 8px; padding: 30px; position: relative; }
-        .slide { display: none; height: 100%; flex-direction: column; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #111; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+        .slide { display: none; width: 100vw; height: 100vh; justify-content: center; align-items: center; }
         .slide.active { display: flex; }
-        .center { justify-content: center; align-items: center; text-align: center; }
-        .title { font-size: 3rem; margin-bottom: 10px; }
-        .subtitle { font-size: 1.5rem; font-style: italic; }
-        .header { font-size: 1.8rem; font-weight: bold; margin-bottom: 15px; text-align: center; }
-        .box { background: rgba(255,255,255,0.4); padding: 15px; border-radius: 6px; line-height: 1.5; font-size: 1.05rem; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: calc(100% - 40px); }
-        .col { background: rgba(255,255,255,0.3); padding: 15px; border-radius: 6px; font-size: 0.85rem; overflow-y: auto; }
-        h3 { font-size: 1.1rem; margin: 10px 0 4px 0; border-bottom: 1px solid rgba(74,51,33,0.3); }
-        h3:first-child { margin-top: 0; }
-        p, li { margin-bottom: 3px; line-height: 1.3; }
-        ol { padding-left: 15px; }
+        img { max-width: 100%; max-height: 100%; object-fit: contain; }
     </style>
 </head>
 <body>
 
-    <div class="deck">
-        <!-- Slide 1 -->
-        <div class="slide center active">
-            <div class="title">Quinceañera</div>
-            <div class="subtitle">Bienvenidos a mi proyecto</div>
-        </div>
+    <!-- Slide 1: Title Image -->
+    <div class="slide active">
+        <img src="QCTITLE.png" alt="Title">
+    </div>
 
-        <!-- Slide 2 -->
-        <div class="slide">
-            <div class="header">Estás Invitado a la Quinceañera</div>
-            <div class="box">
-                <p style="margin-bottom: 10px;">Te invito a celebrar este gran hito histórico conmigo.</p>
-                <p><strong>Lugar:</strong> Salón de Eventos Cynthiana</p>
-                <p><strong>Dirección:</strong> 123 Calle Principal</p>
-                <p><strong>Actividades:</strong> Vamos a bailar y comer para celebrar este día tan especial.</p>
-                <p style="margin-top: 10px;"><strong>Notas:</strong> Habrá una gran variedad de comida, bebidas para todos los gustos y un pastel delicioso. Si deseas dar un detalle a la quinceañera, tendremos una mesa disponible para regalos o dinero.</p>
-            </div>
-        </div>
+    <!-- Slide 2: Invitation Image -->
+    <div class="slide">
+        <img src="QCMAIN.png" alt="Invitation">
+    </div>
 
-        <!-- Slide 3 -->
-        <div class="slide">
-            <div class="header">El plan para el día / The plan for the day</div>
-            <div class="grid">
-                <div class="col">
-                    <h3>El Vestuario</h3>
-                    <p>Quinceañera: Vestido de gala blanco.</p>
-                    <p>Damas: Vestido corto color beige.</p>
-                    <p>Chambelanes: Traje elegante beige.</p>
-                    <h3>Agenda del Día</h3>
-                    <ol>
-                        <li>4:00 PM - La iglesia: Misa tradicional.</li>
-                        <li>5:30 PM - Bendición en la recepción.</li>
-                        <li>6:00 PM - Cambio de zapatos y última muñeca.</li>
-                        <li>7:00 PM - Banquete: Vamos a comer.</li>
-                        <li>8:00 PM - El baile de gala.</li>
-                    </ol>
-                    <h3>Menú de la Recepción</h3>
-                    <p><strong>Entrada:</strong> Totopos con guacamole y salsas.</p>
-                    <p><strong>Principal:</strong> Fajitas de pollo y res con arroz y frijoles.</p>
-                    <p><strong>Bebidas:</strong> Horchata, Jamaica y refrescos.</p>
-                    <p><strong>Postre:</strong> Pastel de tres leches y churros.</p>
-                </div>
-                <div class="col">
-                    <h3>The Outfits</h3>
-                    <p>Quinceañera: White ballgown.</p>
-                    <p>Damas: Short beige dress.</p>
-                    <p>Chambelanes: Elegant beige suit.</p>
-                    <h3>Schedule of Events</h3>
-                    <ol>
-                        <li>4:00 PM - The church: Traditional mass.</li>
-                        <li>5:30 PM - Blessing at the reception.</li>
-                        <li>6:00 PM - Changing of shoes and last doll.</li>
-                        <li>7:00 PM - Banquet: Let's eat.</li>
-                        <li>8:00 PM - The gala dance.</li>
-                    </ol>
-                    <h3>Reception Menu</h3>
-                    <p><strong>Appetizer:</strong> Tortilla chips with guacamole and salsas.</p>
-                    <p><strong>Main Course:</strong> Chicken and beef fajitas with rice and beans.</p>
-                    <p><strong>Drinks:</strong> Horchata, Hibiscus water, and sodas.</p>
-                    <p><strong>Dessert:</strong> Tres leches cake and churros.</p>
-                </div>
-            </div>
-        </div>
+    <!-- Slide 3: Plan Image -->
+    <div class="slide">
+        <img src="QCPLAN.png" alt="Plan for the day">
     </div>
 
     <script>
